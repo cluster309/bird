@@ -1,0 +1,129 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+    
+   margin: 0;
+   background-color: white;
+
+   text-align: center;
+   justify-content: center;
+   background-color: gray;
+   
+}
+
+
+
+.game-container {
+
+   margin: auto; 
+   width: 500px;
+  height:730px; 
+   position: relative;
+    margin-top: 200px; 
+    
+
+ 
+    overflow: hidden; 
+}
+
+.sky {
+   background-image: url(/fb-game-background.png);
+   width: 500px;
+   height: 580px;
+   position: absolute;
+   z-index: -1;
+}
+
+.ground {
+
+    background-image: url(./bottom-background.png); 
+   width: 500px;
+   height: 150px;
+   position: absolute;
+   top:580px;
+   z-index: +2;
+}
+h1{
+   margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.bird{
+ 
+   /* background-image: url(./flappy-bird.png); */
+   /* background-image: url(./1.png); */
+   position: absolute;
+   width: 60px;
+   height: 45px;
+   left: 220px;
+}
+
+.obstacle{
+
+background-image: url(/flappybird-pipe.png);
+
+width: 60px;
+height: 300px;
+position: absolute;
+/* z-index: 1; */
+}
+
+.top-obstacle{
+
+   background-image: url(/flappybird-pipe.png);
+ 
+   transform: rotate(180deg);
+   
+   width: 60px;
+   height: 300px;
+   position: absolute;
+   z-index: -1; 
+   
+   }
+
+
+
+   .game-over{
+      display: none;
+      position: absolute;
+      width: 360px;
+      height: 45px;
+      top:300px;
+      left:170px;
+      background-repeat: no-repeat;
+      background-image: url(./game\ over.png);
+      z-index: 3;
+   }
+
+   #score{
+
+
+      color: black;
+      font-size: 50px;
+      top:100px;
+      left:250px;
+      position: absolute;
+   
+   }
+
+
+   .buttonz{
+  font-size: 30px;
+
+      background-color: white;
+      width: 500px;
+      height: 50px;
+      border-radius: 10px;
+      
+   }
+
+   .buttonz:hover{
+
+      background-color: whitesmoke; 
+   }
