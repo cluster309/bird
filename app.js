@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let gap = 470
     let birddegree = 0
     let score = 0
-    var coin = new Audio('coin.mp3')
-    var wtf = new Audio('wtf.mp3')
+    let coin = new Audio('coin.mp3')
+    let wtf = new Audio('wtf.mp3')
     wtf.volume = 0.3;
-    var au21 = new Audio('21.mp3')
+    let au21 = new Audio('21.mp3')
 
-    var hes21 = false
+    let hes21 = false
 
 
 
